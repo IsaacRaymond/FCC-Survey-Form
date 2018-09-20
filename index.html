@@ -1,0 +1,64 @@
+<LINK REL=StyleSheet HREF="index.css" TYPE="text/css" MEDIA=screen>
+
+<h1 id="title"> FreeCodeCamp Survey Form</h1>
+<hr/>
+<p id="description" style="text-align: center"> Let FCC know what could be improved!</p>
+<form id="name">
+<div class = 'container'>
+  <div class = 'personal-info sections'>
+    <label id = "name-label">Name:   </label>
+    <input autofocus type="text" name="name" id="name" class="input-text" placeholder="Enter your name" required>
+    <label id="email-label">Email: </label>
+    <input autofocus type="text" name="name" id="email" class="input-text" placeholder="Enter your email" required for="email">
+    <label id="number-label">Age:</label>
+    <input autofocus type="text" name="name" id="number" min="1" max="125" class="input-text" placeholder="Enter your age" required>
+    <label>Which option best describes you?</label>
+    <select id="dropdown">
+      <option value = 'Student'> Student </option>
+      <option value = 'Full Time Dev'> Full Time Dev </option>
+      <option value = 'Other'> Other </option>
+      <option value = 'Prefer Anonymity'> Prefer Anonymity </option>
+    </select>
+  </div>
+  <div class = "responses sections">
+    <label>How likely are you to recommend FCC to a friend?</label>
+    <ul style="list-style: none;">
+      <li><input type="radio" name="rec">Very likely </li>
+      <li><input type="radio" name="rec">Somewhat likely</li>
+      <li><input type="radio" name="rec">Somewhat unlikely</li>
+      <li><input type="radio" name="rec">Very unlikely</li>
+    </ul>
+    <label>What do you like most about FCC? </label>
+    <select>
+      <option disabled selected> Select a response </option>
+      <option> Challenges </option>
+      <option> Projects </option>
+      <option> Community </option>
+      <option> Open Source </option>
+    </select>
+  </div>
+  <div class = "responses-two sections">
+    <label>Things that should be improved (check all that apply)</label>
+    <ul>
+      <ui style = "list-style: none">
+        <li><input type = "checkbox" value="1">Front-end Projects</li>
+        <li><input type = "checkbox" value="2">Back-end Projects</li>
+        <li><input type = "checkbox" value="3">Data Visualization</li>
+        <li><input type = "checkbox" value="4">Challenges</li>
+        <li><input type = "checkbox" value="5">Open Source Community</li>
+        <li><input type = "checkbox" value="6">Gitter Help Rooms</li>
+        <li><input type = "checkbox" value="7">Videos</li>
+        <li><input type = "checkbox" value="8">City Meetups</li>
+        <li><input type = "checkbox" value="9">Wiki</li>
+        <li><input type = "checkbox" value="10">Forum</li>
+        <li><input type = "checkbox" value="11">Additional Courses</li>
+      </ui>
+    </ul>
+  </div>
+  <div class = "comments sections">
+    <label>Any comments or suggestions? </label>
+    <textarea wrap="hard" cols = "2">Type any comments/suggestions here </textarea>
+    <button id="submit">Submit</button>
+  </div>
+</div>
+</form>
