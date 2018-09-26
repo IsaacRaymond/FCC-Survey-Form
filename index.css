@@ -91,6 +91,7 @@ div{
 
 @media (min-width: 600px) and (max-width: 1200px) {
   .container{
+    font-size: 35px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -98,6 +99,7 @@ div{
 @media (max-width: 599px)
 {
   .container{
+    font-size: 45px;
     display: inline;
   }
 }
